@@ -1,3 +1,5 @@
+// PACKMODE: quanta
+
 import gtc_expansion.GTCExpansion;
 import gtclassic.api.helpers.GTValues;
 import gtclassic.api.material.GTMaterial;
