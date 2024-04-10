@@ -1,0 +1,30 @@
+{
+  "packName": "VintageTech",
+  "packId": "vintech_pack",
+  "version": "1.0.0",
+  "debug": true,
+  "classes": {
+    "preInit": [
+    ]
+  },
+  "loaders": {
+    "preInit": [
+      "preInit/"
+    ],
+    "init": [
+      "init/"
+    ],
+    "postInit": [
+      "postInit/"
+    ]
+  },
+  "packmode": {
+    "values": [
+      "classic",
+      "quanta"
+    ],
+    "default": "classic",
+    "_comment": "Classic is typical gt4 experience with not much extra processing lines, Quanta is a quanta inspired mode with Realistic processing lines from quanta modpack",
+    "integratePackmodeMod": false
+  }
+}
