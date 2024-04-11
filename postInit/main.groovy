@@ -6,6 +6,59 @@ import exterminatorjeff.undergroundbiomes.intermod.StonesRegistry
 // import ic2.api.recipe.Recipes
 import ic2.api.classic.recipe.ClassicRecipes
 import gtclassic.common.tile.GTTileCentrifuge
+// Nether behind steel
+crafting.removeByOutput(item('minecraft:flint_and_steel'));
+crafting.addShapeless("flint_and_steel", item('minecraft:flint_and_steel'), [item('minecraft:flint'), ore('nuggetSteel')]);
+// Remove Buildcraft Gears
+crafting.removeByOutput(item('buildcraftcore:gear_iron'));
+crafting.removeByOutput(item('buildcraftcore:gear_gold'));
+
+// Remove Thermal Foundation Gear Recipes
+crafting.removeByOutput(item('thermalfoundation:material:22'));
+crafting.removeByOutput(item('thermalfoundation:material:23'));
+crafting.removeByOutput(item('thermalfoundation:material:24'));
+crafting.removeByOutput(item('thermalfoundation:material:25'));
+crafting.removeByOutput(item('thermalfoundation:material:26'));
+crafting.removeByOutput(item('thermalfoundation:material:256'));
+crafting.removeByOutput(item('thermalfoundation:material:257'));
+crafting.removeByOutput(item('thermalfoundation:material:258'));
+crafting.removeByOutput(item('thermalfoundation:material:259'));
+crafting.removeByOutput(item('thermalfoundation:material:260'));
+crafting.removeByOutput(item('thermalfoundation:material:261'));
+crafting.removeByOutput(item('thermalfoundation:material:262'));
+crafting.removeByOutput(item('thermalfoundation:material:263'));
+crafting.removeByOutput(item('thermalfoundation:material:264'));
+crafting.removeByOutput(item('thermalfoundation:material:288'));
+crafting.removeByOutput(item('thermalfoundation:material:289'));
+crafting.removeByOutput(item('thermalfoundation:material:290'));
+crafting.removeByOutput(item('thermalfoundation:material:291'));
+crafting.removeByOutput(item('thermalfoundation:material:292'));
+
+// Remove IC2C Recipes
+crafting.remove("ic2:shaped_item.bucket_-1334477105");
+
+// Remove hand crafting of alloys from dusts
+crafting.removeByOutput(item('immersiveengineering:metal:15'));
+crafting.removeByOutput(item('immersiveengineering:metal:16'));
+crafting.removeByOutput(item('thermalfoundation:material:97'));
+crafting.removeByOutput(item('thermalfoundation:material:98'));
+crafting.removeByOutput(item('thermalfoundation:material:99'));
+crafting.removeByOutput(item('thermalfoundation:material:100'));
+crafting.removeByRecipeName("ic2:shaped_item.itemdustiron_-779868215");
+crafting.removeByRecipeName("ic2:shaped_item.itemdustiron_1576386918");
+
+// Remove unnecessary gunpowder crafting
+crafting.removeByRecipeName('railcraft:minecraft_gunpowder$1');
+crafting.removeByRecipeName("thermalfoundation:gunpowder");
+crafting.removeByRecipeName("thermalfoundation:gunpowder_1");
+crafting.removeByRecipeName("immersiveengineering:material/gunpowder0");
+crafting.removeByRecipeName("immersiveengineering:material/gunpowder1");
+
+// Move Quartz Glass and fiber part to alloy smelter
+//todo move from zs to gs
+// crafting.removeByRecipeName('appliedenergistics2:decorative/quartz_glass');
+// mods.gtclassic.AlloySmelter.addRecipe(item('appliedenergistics2:quartz_glass') * 4, item('appliedenergistics2:material:2') * 5, item('minecraft:glass') * 4);
+// mods.gtclassic.AlloySmelter.addRecipe(item('appliedenergistics2:quartz_glass') * 4, item('appliedenergistics2:material:3') * 5, item('minecraft:glass') * 4);
 
 List stones = API.STONES_REGISTRY.allStones()
 // List sands =
