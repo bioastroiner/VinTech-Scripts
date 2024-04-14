@@ -33,6 +33,9 @@ crafting.removeByOutput(item('thermalfoundation:material:289'));
 crafting.removeByOutput(item('thermalfoundation:material:290'));
 crafting.removeByOutput(item('thermalfoundation:material:291'));
 crafting.removeByOutput(item('thermalfoundation:material:292'));
+crafting.removeByOutput(item('thermalfoundation:material:293'));
+crafting.removeByOutput(item('thermalfoundation:material:294'));
+crafting.removeByOutput(item('thermalfoundation:material:295'));
 
 // Remove IC2C Recipes
 crafting.remove("ic2:shaped_item.bucket_-1334477105");
@@ -44,19 +47,19 @@ crafting.removeByOutput(item('thermalfoundation:material:97'));
 crafting.removeByOutput(item('thermalfoundation:material:98'));
 crafting.removeByOutput(item('thermalfoundation:material:99'));
 crafting.removeByOutput(item('thermalfoundation:material:100'));
-crafting.removeByRecipeName("ic2:shaped_item.itemdustiron_-779868215");
-crafting.removeByRecipeName("ic2:shaped_item.itemdustiron_1576386918");
+crafting.remove("ic2:shaped_item.itemdustiron_-779868215");
+crafting.remove("ic2:shaped_item.itemdustiron_1576386918");
 
 // Remove unnecessary gunpowder crafting
-crafting.removeByRecipeName('railcraft:minecraft_gunpowder$1');
-crafting.removeByRecipeName("thermalfoundation:gunpowder");
-crafting.removeByRecipeName("thermalfoundation:gunpowder_1");
-crafting.removeByRecipeName("immersiveengineering:material/gunpowder0");
-crafting.removeByRecipeName("immersiveengineering:material/gunpowder1");
+crafting.remove('railcraft:minecraft_gunpowder$1');
+crafting.remove("thermalfoundation:gunpowder");
+crafting.remove("thermalfoundation:gunpowder_1");
+crafting.remove("immersiveengineering:material/gunpowder0");
+crafting.remove("immersiveengineering:material/gunpowder1");
 
 // Move Quartz Glass and fiber part to alloy smelter
 //todo move from zs to gs
-// crafting.removeByRecipeName('appliedenergistics2:decorative/quartz_glass');
+// crafting.remove('appliedenergistics2:decorative/quartz_glass');
 // mods.gtclassic.AlloySmelter.addRecipe(item('appliedenergistics2:quartz_glass') * 4, item('appliedenergistics2:material:2') * 5, item('minecraft:glass') * 4);
 // mods.gtclassic.AlloySmelter.addRecipe(item('appliedenergistics2:quartz_glass') * 4, item('appliedenergistics2:material:3') * 5, item('minecraft:glass') * 4);
 
