@@ -49,7 +49,7 @@ crafting.shapedBuilder()
     .row("IRI")
     .row("wCh")
     .row("IRI")
-    .output(item('immersiveengineering:metal_decoration0', 3))
+    .output(item('immersiveengineering:metal_decoration0', 3)*6)
     .register()
 // Light Eng
 crafting.shapedBuilder()
