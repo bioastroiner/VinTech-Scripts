@@ -70,6 +70,9 @@ crafting.shapedBuilder()
     .register()
     mods.chisel.carving.addGroup("lp_modules")
     mods.chisel.carving.addGroup("lp_upgrades")
+    mods.chisel.carving.addGroup("pipe_1")
+    mods.chisel.carving.addGroup("pipe_2")
+    mods.chisel.carving.addGroup("pipe_3")
 for (ItemStack stack in [
 item('logisticspipes:module_item_sink'),
 item('logisticspipes:module_passive_supplier'),
@@ -128,3 +131,53 @@ crafting.removeByOutput(item('logisticspipes:frame'))
 crafting.addShapeless(item('logisticspipes:frame'),[
     ore('machineBlockBasic')
 ])
+
+for (ItemStack stack in [
+item('logisticspipes:pipe_request'),
+item('logisticspipes:pipe_provider'),
+item('logisticspipes:pipe_crafting'),
+item('logisticspipes:pipe_satellite'),
+item('logisticspipes:pipe_supplier'),
+item('logisticspipes:pipe_chassis_mk1'),
+item('logisticspipes:pipe_chassis_mk2'),
+item('logisticspipes:pipe_chassis_mk3'),
+]){
+    crafting.removeByOutput(stack)
+    mods.chisel.carving.addVariation("pipe_1",stack)
+
+}
+for (ItemStack stack in [
+item('logisticspipes:pipe_chassis_mk4'),
+item('logisticspipes:pipe_chassis_mk5'),
+item('logisticspipes:pipe_request_mk2'),
+item('logisticspipes:pipe_remote_orderer'),
+item('logisticspipes:pipe_inventory_system_connector'),
+item('logisticspipes:pipe_system_entrance'),
+item('logisticspipes:pipe_system_destination'),
+item('logisticspipes:pipe_firewall'),
+]){
+    crafting.removeByOutput(stack)
+    mods.chisel.carving.addVariation("pipe_2",stack)
+
+}
+for (ItemStack stack in [
+item('logisticspipes:pipe_fluid_basic'),
+item('logisticspipes:pipe_fluid_supplier'),
+item('logisticspipes:pipe_fluid_insertion'),
+item('logisticspipes:pipe_fluid_provider'),
+item('logisticspipes:pipe_fluid_request'),
+item('logisticspipes:pipe_fluid_extractor'),
+item('logisticspipes:pipe_fluid_satellite'),
+item('logisticspipes:pipe_fluid_supplier_mk2'),
+item('logisticspipes:pipe_fluid_terminus'),
+]){
+    crafting.removeByOutput(stack)
+    mods.chisel.carving.addVariation("pipe_3",stack)
+
+}
+
+crafting.addShaped(item('logisticspipes:pipe_fluid_basic'), [[item('logisticspipes:chip_basic'), item('logisticspipes:pipe_basic:*'), item('logisticspipes:chip_basic')], [ore('plateGold'), item('minecraft:bucket:*'), ore('plateGold')]]);
+crafting.addShaped(item('logisticspipes:pipe_chassis_mk1'), [[ore('plateIron'), item('logisticspipes:chip_basic'), ore('plateIron')], [item('logisticspipes:chip_fpga'), item('logisticspipes:pipe_basic:*'), item('logisticspipes:chip_fpga')]]);
+crafting.addShaped(item('logisticspipes:pipe_chassis_mk4'), [[ore('plateSteel'),item('logisticspipes:chip_advanced'),ore('plateSteel')],[ore('plateGold'), item('logisticspipes:chip_basic'), ore('plateGold')], [item('logisticspipes:chip_fpga'), item('logisticspipes:pipe_basic:*'), item('logisticspipes:chip_fpga')]]);
+
+
