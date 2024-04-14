@@ -1,9 +1,6 @@
-
-import com.cleanroommc.groovyscript.compat.mods.immersiveengineering.ArcFurnace
 import gtc_expansion.tile.GTCXTileBath
 import gtc_expansion.recipes.GTCXRecipeMods
 import ic2.core.block.machine.low.TileEntityMacerator
-import mods.immersiveengineering.arcFurnace
 
 // bath recipe for treated wood (not forced!)
 GTCXTileBath.addRecipe('plankWood',1,fluid('creosote'),200,item('immersiveengineering:treated_wood'))
@@ -19,10 +16,10 @@ GTCXTileBath.addRecipe('plankWood',1,fluid('creosote'),200,item('immersiveengine
     item('gtclassic:chrome_ingot'),
     item('gtclassic:iridium_ingot'),
     item('gtclassic:kanthal_ingot'),
-    item('gtclassic:nichrome_ingot'),
+    item('gtclassic:nichrome_ingot')
 ].iterator().forEachRemaining({toRemove -> 
     log.debug("removing $toRemove from Arc Furnace")
-    arcFurnace.removeByOutput(toRemove)
+    mods.immersiveengineering.arcFurnace.removeByOutput(toRemove)
 })
 // dsnt work :(
 // mods.immersiveengineering.blueprint.removeByOutput(item('immersiveengineering:material', 8))
@@ -32,8 +29,8 @@ def keys = [
     'C': ore('plateCopper'),
     'I': ore('plateIron'),
     'S': ore('plateSteel'),
-    'E':ore('plateElectrum').
-    '1',ore('machineBlockCheap'),
+    'E': ore('plateElectrum'),
+    '1': ore('machineBlockCheap'),
     'h': ore('craftingToolForgeHammer'),
     'w': ore('craftingToolWrench')
 ]
