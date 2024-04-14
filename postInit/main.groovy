@@ -57,6 +57,14 @@ crafting.remove("thermalfoundation:gunpowder_1");
 crafting.remove("immersiveengineering:material/gunpowder0");
 crafting.remove("immersiveengineering:material/gunpowder1");
 
+crafting.removeByOutput(item('ic2:itembatcrystal'))
+crafting.removeByOutput(item('ic2c_extras:energiumdust'))
+crafting.addShaped(item('ic2c_extras:energiumdust')*9,[
+   [ore('dustRuby'),ore('dustRedstone'),ore('dustRuby')],
+   [ore('dustRedstone'),ore('dustRuby'),ore('dustRedstone')],
+   [ore('dustRuby'),ore('dustRedstone'),ore('dustRuby')],
+])
+
 // Move Quartz Glass and fiber part to alloy smelter
 //todo move from zs to gs
 // crafting.remove('appliedenergistics2:decorative/quartz_glass');
