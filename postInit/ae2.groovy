@@ -12,3 +12,10 @@ crafting.replaceShaped(item('appliedenergistics2:controller'),[
 
 furnace.removeByOutput(item('appliedenergistics2:material', 5))
 
+crafting.removeByOutput(item('appliedenergistics2:part', 140))
+crafting.addShaped(item('appliedenergistics2:part', 140)*3,[
+    [item('appliedenergistics2:quartz_glass'),item('appliedenergistics2:quartz_glass'),item('appliedenergistics2:quartz_glass')],
+    [item('ic2:itemcable', 9),item('ic2:itemcable', 9),item('ic2:itemcable', 9)],
+    [item('appliedenergistics2:quartz_glass'),item('appliedenergistics2:quartz_glass'),item('appliedenergistics2:quartz_glass')],
+])
+
